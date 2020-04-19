@@ -1,5 +1,4 @@
 import os
-# from sqlalchemy import Table, db.Column, String, db.Integer, DateTime, create_engine
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 import json
