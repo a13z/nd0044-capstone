@@ -63,6 +63,11 @@ This is a database connection URL string. If the database is running locally and
 ## export to the shell the DATABASE_URL
 export DATABASE_URL=postgres://postgres:mysecretpassword@localhost:5432/udacity_fsdn_capstone_test
 ```
+If the database is not initialised, we need to run migrations with the following command:
+
+```
+python manage.py db migrate
+```
 
 ### Test Auth0 Tokens
 In order to test the permissions for the three type of roles, we need to create some tokens.
