@@ -598,7 +598,7 @@
 				"bearer": [
 					{
 						"key": "token",
-						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjJpZlZIZFZnek1icXlHNGh1TFhaZCJ9.eyJpc3MiOiJodHRwczovL25kMDA0NC5ldS5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWU5YzkwMWU2N2U4NzQwYzFlZGUxZTQ5IiwiYXVkIjoiY2Fwc3RvbmUiLCJpYXQiOjE1ODczMTkzODcsImV4cCI6MTU4NzMyNjU4NywiYXpwIjoiNlhIaWxmcFIxVWt4RUNoUmM1NnRoMnBpTHFMaVExVXkiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImdldDphY3RvcnMiLCJnZXQ6bW92aWVzIl19.1NibabbvPB2_kSlGb5pimPaLMFDtX2TtTQ-FlMq9R6urqt3eN2Z54hiS_lbMuI-cVuxJB--XegCraW5o8obF9QAoBUWZRSFd0o6QshSCzpyaMxq_lupLUwy6n7vo7_ESRnsIgHdhL86HYJTRPjcrUov3Btg5MOHU2mr-_NMwiuXkl23gNlFsOOz_Kyq-A3g4hNhJYBsccORjW5VUTAf2rwzFsNMCKTHDiobJ4KfSTFRLOrpZcRzjQ5vy78B_MD6tHM_d43fBVcW02OPCWifYS3wgMUCqcThe_D5CbUpHGdC5VG0cA0LyQJ0RtIB4jIwnQm5CdDx4ghdcW_OAYPFGiQ",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjJpZlZIZFZnek1icXlHNGh1TFhaZCJ9.eyJpc3MiOiJodHRwczovL25kMDA0NC5ldS5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWU5YzkwMWU2N2U4NzQwYzFlZGUxZTQ5IiwiYXVkIjoiY2Fwc3RvbmUiLCJpYXQiOjE1ODc0MDM1MzEsImV4cCI6MTU4NzQ4OTkzMSwiYXpwIjoiNlhIaWxmcFIxVWt4RUNoUmM1NnRoMnBpTHFMaVExVXkiLCJndHkiOiJwYXNzd29yZCIsInBlcm1pc3Npb25zIjpbImdldDphY3RvcnMiLCJnZXQ6bW92aWVzIl19.3TrQsBgpT5EtA7HglhJjZX8TWmVXIuyNE_cvJZCoe1TH0dUVJpBAIhRyvqLx57CrRjjhtS0oD9B0gnbvbWdbfieM0H1Eavl_bk1WpBmDGENNsorbAxKhwZ3uSsqpI8ZGHGMa88ualPbpe0LcovAXB7O-8crQNKOcbz39yLSuDHLh9p6089d5xbQYC7pvXDUumyMeEuzg_bo7ATwa9b3VzkSIry4clRdETa4SGQ8WzFKaoVwIO8LSh1AhsrE3aRnRixC1YVOsjbbbmFzGT3K5ezKsoFhWBOlhSz-D5G4rTxJAN-uQSWhFJRccI-3xDED0xxQ-rGyiAoRpFaLhyfx9rA",
 						"type": "string"
 					}
 				]
@@ -687,9 +687,16 @@
 							}
 						}
 					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "{{host}}/actors",
 							"host": [
@@ -775,7 +782,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"Doc Brown\",\n    \"age\": \"48\",\n    \"gender\": \"Male\"\n}"
+							"raw": "{\n    \"name\": \"Michael J. Fox\",\n    \"age\": \"33\",\n    \"gender\": \"Male\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/actors",
@@ -824,13 +831,13 @@
 							"raw": "{\n    \"title\": \"BTTF\",\n\t\"release_date\": \"1985-06-22T00:00:00\"\n}"
 						},
 						"url": {
-							"raw": "{{host}}/movies/2",
+							"raw": "{{host}}/movies/1",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
 								"movies",
-								"2"
+								"1"
 							]
 						}
 					},
@@ -946,13 +953,13 @@
 							}
 						],
 						"url": {
-							"raw": "{{host}}/actors/2",
+							"raw": "{{host}}/actors/1",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
 								"actors",
-								"2"
+								"1"
 							]
 						}
 					},
@@ -964,7 +971,7 @@
 				"bearer": [
 					{
 						"key": "token",
-						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjJpZlZIZFZnek1icXlHNGh1TFhaZCJ9.eyJpc3MiOiJodHRwczovL25kMDA0NC5ldS5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWU5YzkwMzE5YjQzNTgwYzFlMDA5MWNhIiwiYXVkIjoiY2Fwc3RvbmUiLCJpYXQiOjE1ODczMjAxMjMsImV4cCI6MTU4NzMyNzMyMywiYXpwIjoiNlhIaWxmcFIxVWt4RUNoUmM1NnRoMnBpTHFMaVExVXkiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyIsInBhdGNoOmFjdG9ycyIsInBhdGNoOm1vdmllcyIsInBvc3Q6YWN0b3JzIl19.ymcxpn5PAwiKRMHbBmlyftlPWKpQENjppd8Hd9FYpFo-XL3xXaQtcyKKKK8sOwBDLEpRIMCbnni0QlAB_NbOmyFH17sphxT0-tQ1Snc1Ho2F-WOxMMRkV3YHC_88Z1saV7scBmMcM4B1VEuQShvNcf6PEyIWsfbep1hHouBe1y8XxJi2dtT0SeDo9Cotx0AQpZw2kChpVYWpjPqrILqq8T6KuYinq8dKWDFe77jNlbMh7CxqFBBjSrBWP0_zxYfSUTZ2egzslEOOKseCs4hMNnvdQOf3LaupNcgJwclpLSr9dNmIjxzQOzasIvxB5RUuXJ30PmfFcVQ2n83usuo-lg",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjJpZlZIZFZnek1icXlHNGh1TFhaZCJ9.eyJpc3MiOiJodHRwczovL25kMDA0NC5ldS5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWU5YzkwMzE5YjQzNTgwYzFlMDA5MWNhIiwiYXVkIjoiY2Fwc3RvbmUiLCJpYXQiOjE1ODc0MDM1MzIsImV4cCI6MTU4NzQ4OTkzMiwiYXpwIjoiNlhIaWxmcFIxVWt4RUNoUmM1NnRoMnBpTHFMaVExVXkiLCJndHkiOiJwYXNzd29yZCIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyIsInBhdGNoOmFjdG9ycyIsInBhdGNoOm1vdmllcyIsInBvc3Q6YWN0b3JzIl19.mQYaNkIG3Qudu9iCBXLlpiSPuimP0DJCXoqFIi1MLBF5MCa8OEtjdo5Rptlvt0-OzQkBhcbIDfv_C3_dAG85G3xfSbTA4xbdGCi51xrHWAN6QNZOkx1Otl7iIp4jNFyS4tiGFRZJwPvamEKLTWewrUotwrUxYy23pDIvbRcuGp5g9h8TRRvJpYFHBABCyvRGn20NTK6Rm1-7mxWVUjXs8IRwtY4SK3hVHo9jtn22rPAFdSBvND6CuQOqBErsMYrJdZUCyD-6PuXG3fx1mr5O7H_Uo7Usx_qUeriLdEICqssDawHkokJnQWWeJXezop83EGJv2TZ3lH7H_VSIog4scw",
 						"type": "string"
 					}
 				]
@@ -1105,7 +1112,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"title\": \"BTTF3\",\n\t\"release_date\": \"1989-06-22T00:00:00\"\n}"
+							"raw": "{\n    \"title\": \"Back to the future 3\",\n\t\"release_date\": \"1990-05-25T00:00:00\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/movies",
@@ -1156,7 +1163,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"Doc Brown\",\n    \"age\": \"48\",\n    \"gender\": \"Male\"\n}"
+							"raw": "{\n    \"name\": \"Claudia Grace Wells\",\n    \"age\": \"53\",\n    \"gender\": \"Female\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/actors",
@@ -1202,16 +1209,16 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"title\": \"BTTF\",\n\t\"release_date\": \"1985-06-22T00:00:00\"\n}"
+							"raw": "{\n    \"title\": \"BTTF\",\n\t\"release_date\": \"1985-06-23T00:00:00\"\n}"
 						},
 						"url": {
-							"raw": "{{host}}/movies/2",
+							"raw": "{{host}}/movies/1",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
 								"movies",
-								"2"
+								"1"
 							]
 						}
 					},
@@ -1332,13 +1339,13 @@
 							}
 						],
 						"url": {
-							"raw": "{{host}}/actors/2",
+							"raw": "{{host}}/actors/1",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
 								"actors",
-								"2"
+								"1"
 							]
 						}
 					},
@@ -1350,7 +1357,7 @@
 				"bearer": [
 					{
 						"key": "token",
-						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjJpZlZIZFZnek1icXlHNGh1TFhaZCJ9.eyJpc3MiOiJodHRwczovL25kMDA0NC5ldS5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWU5YzkwNDM2N2U4NzQwYzFlZGUxZTZhIiwiYXVkIjoiY2Fwc3RvbmUiLCJpYXQiOjE1ODczMjE0MzksImV4cCI6MTU4NzMyODYzOSwiYXpwIjoiNlhIaWxmcFIxVWt4RUNoUmM1NnRoMnBpTHFMaVExVXkiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6bW92aWVzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyIsInBvc3Q6bW92aWVzIl19.zQtLH2YU1eH1e7LaOz3I33DbH5ZVQPeKD1Ic2-0tEugNGBa1If0Bgb3EhA5X_oShPEcVX-UZY0-RGHEbfRhlau-ZKNZkPLrCZ7lQsV88zGJs4Id-HrWPN2Naz3xfi9yAPRr8NhMK7XasVhSgzBGPtqXxFy9jtEDtZkUI8LsJmAvsj5PBGYB0gkq0fPH59b4kjnk54yPHW1nBIk0CidmYpGNXaEeahRLE_kXfPCvRQVuuxjTh6kFp24cqDkN52OZSAmmubAhNEq9vDMFaDaznzCEvm-ECf3MeLU3jJxLlZHfvtqErzV5Hy6FKHx6zafGekCOQmheBbeD2M3WLOZQfQQ",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjJpZlZIZFZnek1icXlHNGh1TFhaZCJ9.eyJpc3MiOiJodHRwczovL25kMDA0NC5ldS5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWU5YzkwNDM2N2U4NzQwYzFlZGUxZTZhIiwiYXVkIjoiY2Fwc3RvbmUiLCJpYXQiOjE1ODc0MDM1MzIsImV4cCI6MTU4NzQ4OTkzMiwiYXpwIjoiNlhIaWxmcFIxVWt4RUNoUmM1NnRoMnBpTHFMaVExVXkiLCJndHkiOiJwYXNzd29yZCIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvcnMiLCJkZWxldGU6bW92aWVzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyIsInBvc3Q6bW92aWVzIl19.Cq3Ct7wTWXq7sW0W2W-ywIy-F8rNscgT2ILmYMH5CBSfLKmR57sCibuc2cOp9itu0WBA7Vuhi6ObN_7YwOvDxUTlBOFuJASXzlisdcRBpXfTbve6HZEDufJZY5B57C4AhfesUbPjRZlItpDnGcRmf942G4oe8JI02borWYoc_Zc5lAIyH4-05PDf1j95Bqm2m-UbStJlQMRR7cNzKKezKXtyPPr3wguX03-m9Bn7EdeNDG-vuJPKidSJwdPZeuQ0dPLUTwYoRN6ergTIerqB1YMn4rnfHW-xwPU30PF1bmY2terosBw-oZEPOiD5klQCoC-ZyO2KXJc2BtkW4e0r2Q",
 						"type": "string"
 					}
 				]
