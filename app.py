@@ -49,7 +49,6 @@ def create_app(test_config=None):
     @requires_auth('post:movies')
     def add_movie():
         body = request.get_json()
-        print("Movie POST body", body)
         title = body.get('title')
         release_date = body.get('release_date')
 
@@ -157,9 +156,7 @@ def create_app(test_config=None):
     @app.route('/actors', methods=['POST'])
     @requires_auth('post:actors')
     def add_actor():
-        print(request.get_json())
         body = request.get_json()
-        print("Actor POST body ", body)
         name = body.get('name')
         age = body.get('age')
         gender = body.get('gender')
