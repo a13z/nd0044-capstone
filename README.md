@@ -40,6 +40,13 @@ Once we have a database intance running, we need to provide it as database conne
 
 `export DATABASE_URL=postgres://postgres:mysecretpassword@localhost:5432/udacity_fsdn_capstone`
 
+We also need a few environment variables to setup Auth0. These are
+```
+export AUTH0_DOMAIN=<your_auth0_domain>
+export AUTH0_ALGORITHMS=[<your_algorithms>] # This is a list of algorithms
+export AUTH0_API_AUDIENCE=<your_api_audience>
+```
+
 To run the application run the following commands:
 ```
 export FLASK_APP=app.py
